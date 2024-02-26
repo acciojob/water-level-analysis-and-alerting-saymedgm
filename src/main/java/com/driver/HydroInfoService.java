@@ -10,12 +10,11 @@ public class HydroInfoService {
     }
 
     public void storeWaterLevelData(WaterLevelDTO waterLevelDTO) {
-    	//your code goes here
+        WaterLevel waterLevel = new WaterLevelDataConverter().convertToEntity(waterLevelDTO);
+        waterLevelDataRepository.storeWaterLevel(waterLevel);
     }
 
     public List<WaterLevel> getAllWaterLevels() {
-    	//your code goes here
         return waterLevelDataRepository.getAllWaterLevels();
     }
 }
-

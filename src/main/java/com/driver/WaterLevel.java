@@ -10,13 +10,10 @@ public class WaterLevel {
     }
 
     public String getSiteName() {
-    	//your code goes here
         return siteName;
     }
 
     public double getWaterLevel() {
-    	//your code goes here
         return waterLevel;
     }
 }
-
